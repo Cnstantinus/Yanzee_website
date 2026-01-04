@@ -12,15 +12,15 @@ export const Footer: React.FC = () => {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                   <Rocket className="h-5 w-5" />
                 </div>
-                <span className="text-xl font-bold">星云科技</span>
+                <span className="text-xl font-bold">衍知科技</span>
              </div>
              <p className="max-w-xs text-sm text-slate-400 mb-6">
                致力于为全球企业提供卓越的数字化转型方案，用技术连接未来，创造无限商业价值。
              </p>
              <div className="flex gap-4">
-               {[<Linkedin />, <Twitter />, <Facebook />, <Github />].map((icon, i) => (
+               {[Linkedin, Twitter, Facebook, Github].map((Icon, i) => (
                  <a key={i} href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all text-slate-400">
-                   {React.cloneElement(icon as React.ReactElement, { size: 18 })}
+                   <Icon size={18} />
                  </a>
                ))}
              </div>
@@ -48,5 +48,10 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col md:flex-row justify-between items-center">
-          <p>© 2024 星云科技 (NovaTech). All rights reserved.</p>
-          <p className="mt-2 md:
+          <p>© 2024 衍知科技 (YanzeeTech). All rights reserved.</p>
+          <p className="mt-2 md:mt-0">Powered by React</p>
+        </div>
+      </div>
+    </footer>
+  );
+};

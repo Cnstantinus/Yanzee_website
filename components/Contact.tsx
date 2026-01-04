@@ -43,7 +43,7 @@ export const Contact: React.FC = () => {
               <div>
                 <h4 className="font-bold text-slate-900 mb-1">发送邮件</h4>
                 <p className="text-slate-600 text-sm mb-2">如果您有任何项目需求，请邮件联系。</p>
-                <a href="mailto:contact@novatech.com" className="text-blue-600 font-semibold hover:underline">contact@novatech.com</a>
+                <a href="mailto:contact@yanzeetech.com" className="text-blue-600 font-semibold hover:underline">contact@yanzeetech.com</a>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
                 <p className="text-slate-600 text-sm">
                   上海市浦东新区<br />
                   张江高科技园区科技大道88号<br />
-                  星云大厦 15层
+                  衍知大厦 15层
                 </p>
               </div>
             </div>

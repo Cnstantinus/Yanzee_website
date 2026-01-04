@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
             <Rocket className="h-6 w-6" />
           </div>
           <span className={`text-2xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-slate-900 lg:text-slate-800'}`}>
-            星云科技
+            衍知科技
           </span>
         </div>
 
