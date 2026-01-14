@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    server_name your_domain.com; # 请替换为你的域名或服务器IP
+
+    # 指向你上传到服务器的 dist 目录的完整路径
+    root /var/www/yanzee-website/dist; 
+    index index.html;
+
+    # 处理单页应用 (SPA) 的路由
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # 可选：静态资源缓存配置
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+        expires 30d;
+        add_header Cache-Control "public, no-transform";
+    }
+}
